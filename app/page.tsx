@@ -15,9 +15,9 @@ export default function Home() {
         </CardHeader>
         <form action={createFeedback}>
           <CardContent>
-            <Input className="mb-4" placeholder="Enter your full name" />
-            <Input className="mb-4" placeholder="Enter your email" />
-            <Textarea className="mb-4" placeholder="please write you feedback here" />
+            <Input name="fullName" className="mb-4" placeholder="Enter your full name" />
+            <Input name="email" className="mb-4" placeholder="Enter your email" />
+            <Textarea name="feedback" className="mb-4" placeholder="please write you feedback here" />
           </CardContent>
           <CardFooter className="border-t">
             <SubmitButton text="Submit your feedback" />
