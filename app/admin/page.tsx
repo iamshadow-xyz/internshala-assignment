@@ -7,10 +7,10 @@ export default async function page() {
    const Feedbacks = await db.select().from(Feedback)
   return (
     <div>
-      <h1 className='text-lg font-medium'>All feedbacks</h1>
+      <h1 className='text-lg mb-5 font-medium'>All feedbacks</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
     { Feedbacks.map((feedback) => (
-        <Card className='mt-5' key={feedback.id}>
+        <Card key={feedback.id}>
             <CardHeader className='border-b'>
                 <CardTitle>
                     {feedback.fullName}
