@@ -10,9 +10,7 @@ export default function SubmitButton({text}: {text: string}) {
   return (
     <div>
       <Button className='cursor-pointer' disabled={pending} >
-        {
-            pending ?? <Loader2 className='animate-spin'/>
-        }
+      {pending && <Loader2 className="animate-spin" />}
         {text}
       </Button>
     </div>
