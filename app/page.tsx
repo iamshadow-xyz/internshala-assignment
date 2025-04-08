@@ -2,6 +2,7 @@ import SubmitButton from "@/components/submit-button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { createFeedback } from "./action";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           <CardTitle>Submit your feedback</CardTitle>
           <CardDescription>please submit yout genuine feedback, how do you feel about our product, and what can we implement to improve 😊</CardDescription>
         </CardHeader>
-        <form action="">
+        <form action={createFeedback}>
           <CardContent>
             <Input className="mb-4" placeholder="Enter your full name" />
             <Input className="mb-4" placeholder="Enter your email" />
