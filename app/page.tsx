@@ -1,8 +1,8 @@
+import SubmitButton from "@/components/submit-button";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
             <Textarea className="mb-4" placeholder="please write you feedback here" />
           </CardContent>
           <CardFooter className="border-t">
-            <Button>Submit</Button>
+            <SubmitButton text="Submit your feedback" />
           </CardFooter>
         </form>
       </Card>
